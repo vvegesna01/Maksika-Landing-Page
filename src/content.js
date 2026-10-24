@@ -1,11 +1,20 @@
 // All site copy lives here so it can be edited without touching components.
 
 export const nav = [
-  { label: 'Services', href: '#services' },
-  { label: 'Solutions', href: '#solutions' },
-  { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About', to: '/about' },
+  { label: 'Services', to: '/services' },
+  {
+    label: 'Solutions',
+    to: '/solutions',
+    children: [
+      { label: 'Exploration Geology', to: '/solutions/exploration-geology' },
+      { label: 'Mine Life Cycle Engineering', to: '/solutions/mine-life-cycle-engineering' },
+      { label: 'Surveying & Geo-informatics', to: '/solutions/surveying-geo-informatics' },
+      { label: 'Spatial Analytics', to: '/solutions/spatial-analytics' },
+    ],
+  },
+  { label: 'Projects', to: '/projects' },
+  { label: 'Blog', to: '/blog' },
 ];
 
 export const partners = [
@@ -31,8 +40,8 @@ export const services = [
   },
   {
     title: 'Mine Engineering & Resource Management',
-    text: 'Specialist disciplines across the mine lifecycle, from beneficiation plans to closure.',
-    points: ['Geostatistical analysis', '3D block modelling', 'Ore beneficiation processes'],
+    text: 'Specializt disciplines across the mine lifecycle, from beneficiation plans to closure.',
+    points: ['Geostatistical analysis', '3D block modeling', 'Ore beneficiation processes'],
     outcome: 'Transparent reporting for investment support',
   },
   {
@@ -45,20 +54,24 @@ export const services = [
 
 export const solutions = [
   {
+    slug: 'exploration-geology',
     title: 'Exploration Geology',
     text: 'Cost-effective exploration and development services, feasibility studies, due diligence and geological mapping for base and precious metals, industrial minerals and REE.',
   },
   {
+    slug: 'mine-life-cycle-engineering',
     title: 'Mine Life Cycle Engineering',
-    text: 'Resource modelling, reserve estimation, mineral beneficiation planning and JORC / CIM / PERC compliance auditing.',
+    text: 'Resource modeling, reserve estimation, mineral beneficiation planning and JORC / CIM / PERC compliance auditing.',
   },
   {
+    slug: 'surveying-geo-informatics',
     title: 'Surveying & Geo-informatics',
     text: 'High-precision terrestrial surveying, drone mapping, DGPS capture and satellite radar interferometry (InSAR).',
   },
   {
+    slug: 'spatial-analytics',
     title: 'Spatial Analytics',
-    text: 'GIS architecture, 3D LiDAR modelling, digital twins, cloud migration and enterprise application development.',
+    text: 'GIS architecture, 3D LiDAR modeling, digital twins, cloud migration and enterprise application development.',
   },
 ];
 
@@ -87,14 +100,17 @@ export const about = {
 
 export const posts = [
   {
+    slug: 'full-wave-location-fwl-technology',
     title: 'Full-Wave Location (FWL) Technology',
     text: 'Passive microseismic monitoring for better reservoir management and improved hydrocarbon recovery.',
   },
   {
+    slug: 'common-scattered-point-dip-cspd',
     title: 'Common Scattered Point Dip (CSPD)',
     text: 'Why diffraction energy, often treated as noise, can sharpen seismic interpretation workflows.',
   },
   {
+    slug: 'engineering-grade-drone-data-for-modern-geoscience-applications',
     title: 'Engineering Grade Drone Data for Modern Geoscience',
     text: 'On-demand, ultra-high-resolution data acquisition tailored to specific project needs.',
   },
