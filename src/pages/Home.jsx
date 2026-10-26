@@ -19,7 +19,8 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="hero__bg" aria-hidden="true">
-          <Placeholder label="Hero image: drone / mine site (1920×1080)" ratio="auto" className="hero__img" />
+          <img className="hero__img" ratio="auto" object-fit="cover" src="images/hero-image.jpg" alt="Maksika Resources" />
+          {/* <Placeholder label="Hero image: drone / mine site (1920×1080)" ratio="auto" className="hero__img" /> */}
         </div>
         <div className="container hero__inner">
           <p className="eyebrow eyebrow--light">Maksika Resources Pvt Ltd</p>
@@ -69,7 +70,8 @@ export default function Home() {
           <div className="grid grid--3">
             {services.map((s) => (
               <article key={s.title} className="card card--service">
-                <Placeholder label="Service image (800×500)" ratio="8 / 5" />
+                <img src={s.image} alt={s.title}/>
+                {/* <Placeholder label="Service image (800×500)" ratio="8 / 5" /> */}
                 <div className="card__body">
                   <h3>{s.title}</h3>
                   <p>{s.text}</p>
@@ -121,7 +123,8 @@ export default function Home() {
           </div>
           <div>
             <SectionHead eyebrow="Global footprint" title="Delivering across diverse geologies" />
-            <Placeholder label="World map graphic (900×560)" ratio="9 / 5.6" />
+            {/* <Placeholder label="World map graphic (900×560)" ratio="9 / 5.6" /> */}
+            <img src="images/world_map.jpg" alt="World map graphic" />
             <ul className="chips">
               {countries.map((c) => (
                 <li key={c}>{c}</li>

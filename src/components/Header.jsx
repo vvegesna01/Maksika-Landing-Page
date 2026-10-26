@@ -28,9 +28,9 @@ export default function Header() {
     <header className={`header ${scrolled || open ? 'header--solid' : ''}`}>
       <div className="container header__inner">
         <Link to="/" className="logo" aria-label="Maksika Resources, home">
-          {/* Replace with logo image: <img src="images/logo-white.svg" alt="Maksika" /> */}
-          <span className="logo__mark">MAKSIKA</span>
-          <span className="logo__tag">Prudence Triumph</span>
+          <img src="images/white_logo.png" alt="Maksika" height="50" />
+          {/* <span className="logo__mark">MAKSIKA</span> */}
+          {/* <span className="logo__tag">Prudence Triumph</span> */}
         </Link>
 
         <button

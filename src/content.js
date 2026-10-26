@@ -34,18 +34,22 @@ export const stats = [
 export const services = [
   {
     title: 'Subsurface Exploration & Energy',
+    image: 'images/subsurface.jpg',
     text: 'Integrated hydrocarbon and mineral exploration using advanced seismic and geophysical methods.',
     points: ['Micro-seismic monitoring', 'Gravity / magnetics', 'Borehole geophysics'],
     outcome: 'Accurate resource zonation, reduced drilling risk',
+    
   },
   {
     title: 'Mine Engineering & Resource Management',
+    image: 'images/mining.jpg',
     text: 'Specializt disciplines across the mine lifecycle, from beneficiation plans to closure.',
     points: ['Geostatistical analysis', '3D block modeling', 'Ore beneficiation processes'],
     outcome: 'Transparent reporting for investment support',
   },
   {
     title: 'Sustainable Infrastructure & Environment',
+    image: 'images/sustainable.jpg',
     text: 'Environmental Impact Assessments and land-water resource development built for long-term viability.',
     points: ['9-stage EIA process support', 'Compliance management', 'Strategic resource auditing'],
     outcome: 'Impact mitigation and regulatory compliance',
@@ -84,7 +88,7 @@ export const standards = [
 export const countries = ['India', 'D.R. Congo', 'Oman', 'Turkey', 'Madagascar'];
 
 export const about = {
-  lead: 'Maksika is Sanskrit for honeybee: collective intelligence for Earth resources.',
+  lead: 'Collective intelligence for Earth resources.',
   text: 'We bridge space-age remote sensing and ground-level engineering. Our team of GIS architects, geophysicists and mining engineers works with geometric precision to deliver structural perfection in extraction and data architecture.',
   pillars: [
     { title: 'Our mission', text: 'Enable sustainable development through precise data and scientific excellence.' },

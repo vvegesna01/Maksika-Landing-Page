@@ -89,7 +89,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero { position: relative; min-height: 100svh; display: flex; align-items: center; background: var(--coral); color: var(--white); padding: calc(var(--header-h) + 3rem) 0 4rem; overflow: hidden; }
 .hero__bg { position: absolute; inset: 0; }
 .hero__bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(100deg, rgba(235,63,63,.95) 20%, rgba(54,26,12,.55)); }
-.hero__img { height: 100%; border: 0; border-radius: 0; opacity: .35; }
+.hero__img { height: 100%; border: 0; border-radius: 0; opacity: .75; align-self: right; object-fit: cover; object-position: center; }
 .hero__img span, .hero__img svg { display: none; }
 .hero__inner { position: relative; z-index: 1; }
 .hero h1 { max-width: 16ch; }
