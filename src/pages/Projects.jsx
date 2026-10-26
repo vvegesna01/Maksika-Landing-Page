@@ -10,7 +10,8 @@ export default function Projects() {
         <div className="container projects">
           {p.items.map((x, i) => (
             <article key={x.title} className={`project ${i % 2 ? 'project--flip' : ''}`}>
-              <Placeholder label="Project image (900×600)" ratio="3 / 2" />
+              {/* <Placeholder label="Project image (900×600)" ratio="3 / 2" /> */}
+              <img src={x.image} alt={x.title} className="project-image" />
               <div>
                 <p className="eyebrow">{x.location}</p>
                 <h2>{x.title}</h2>

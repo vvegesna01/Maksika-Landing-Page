@@ -156,7 +156,8 @@ export default function Home() {
           </div>
 
           <div className="ceo">
-            <Placeholder label="CEO portrait (400×400)" ratio="1 / 1" className="ceo__photo" />
+            {/* <Placeholder label="CEO portrait (400×400)" ratio="1 / 1" className="ceo__photo" /> */}
+            <img src="images/ceo.jpeg" alt="CEO portrait" ratio="1" className="ceo__photo" />
             <div>
               <p className="eyebrow eyebrow--gold">Leadership</p>
               <h3>{about.ceo.name}</h3>

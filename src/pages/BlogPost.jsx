@@ -21,7 +21,8 @@ export default function BlogPost() {
       />
       <article className="section">
         <div className="container container--narrow">
-          <Placeholder label="Post cover image (1200×600)" ratio="2 / 1" />
+          {/* <Placeholder label="Post cover image (1200×600)" ratio="2 / 1" /> */}
+          <img src={body.image} alt={post.title} className="cover-image" />
           <div className="article">
             {body.body.map((b, i) =>
               b.h ? (

@@ -40,6 +40,7 @@ export const servicesPage = {
     {
       id: 'subsurface',
       title: 'Subsurface Exploration & Energy',
+      image: 'images/subsurface.jpg',
       text: 'Integrated hydrocarbon and mineral exploration using advanced seismic and geophysical methods.',
       groups: [
         { label: 'Industries', items: ['Mining', 'Oil & Gas', 'Energy Utilities'] },
@@ -50,6 +51,7 @@ export const servicesPage = {
     {
       id: 'mine-engineering',
       title: 'Mine Engineering & Resource Management',
+      image: 'images/mining.jpg',
       text: 'Specializt disciplines across the mine lifecycle, from beneficiation plans to closure.',
       groups: [
         { label: 'Technical methods', items: ['Geostatistical analysis', '3D block modeling', 'Ore beneficiation processes'] },
@@ -60,6 +62,7 @@ export const servicesPage = {
     {
       id: 'sustainable',
       title: 'Sustainable Infrastructure & Environment',
+      image: 'images/sustainable.jpg',
       text: 'Environmental Impact Assessments and land-water resource development designed for long-term ecological and infrastructure viability.',
       groups: [
         { label: 'Industries served', items: ['Agriculture', 'Forestry', 'Government agencies'] },
@@ -211,16 +214,19 @@ export const projectsPage = {
   items: [
     {
       title: 'Strategic Chromite Resource Assessment',
+      image: 'images/projects/project1.png',
       location: 'Northern Oman Ophiolitic Complex',
       text: 'A multi-region exploration program to locate chromite deposits for the development of a major ferroalloy plant. Secured the resource base for the AI Thamman Indsil Ferrochrome facility.',
     },
     {
       title: 'Innovation in Hydrocarbon Monitoring (ONGC)',
+      image: 'images/projects/project2.jpg',
       location: 'KG Basin & Jhalora Fields, India',
       text: 'Implemented next-generation micro-seismic technologies for major oil & gas operations. Deployed LFS and FWL technologies commercially for the first time in India.',
     },
     {
       title: 'Pan-African Rare Earth & Precious Metals Exploration',
+      image: 'images/projects/project3.png',
       location: 'Madagascar & Mali',
       text: 'A specialized project assessing critical rare earth elements (REE) and gold deposits, integrating stream sediment surveys and REE deposit assessments for international mining groups.',
     },
@@ -230,6 +236,7 @@ export const projectsPage = {
 // Blog bodies: blocks of { h }, { p } or { ul }.
 export const blogPosts = {
   'full-wave-location-fwl-technology': {
+    image: 'images/blog/fwl.png',
     date: 'Mar 27',
     read: '1 min read',
     body: [
@@ -241,6 +248,7 @@ export const blogPosts = {
     ],
   },
   'common-scattered-point-dip-cspd': {
+    image: 'images/blog/cspd.png',
     date: 'Mar 27',
     read: '1 min read',
     body: [
@@ -251,6 +259,7 @@ export const blogPosts = {
     ],
   },
   'engineering-grade-drone-data-for-modern-geoscience-applications': {
+    image: 'images/blog/drone.png',
     date: 'Mar 27',
     read: '2 min read',
     body: [

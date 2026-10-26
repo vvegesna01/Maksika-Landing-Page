@@ -15,7 +15,8 @@ export default function Services() {
               <p className="eyebrow">Service {String(i + 1).padStart(2, '0')}</p>
               <h2>{s.title}</h2>
               <p className="lead">{s.text}</p>
-              <Placeholder label="Service image (800×500)" ratio="8 / 5" />
+              {/* <Placeholder label="Service image (800×500)" ratio="8 / 5" /> */}
+              <img className="service-image" src={s.image} alt={s.title} corner-radius="50%" />
             </div>
             <div className="detail-groups">
               {s.groups.map((g) => (

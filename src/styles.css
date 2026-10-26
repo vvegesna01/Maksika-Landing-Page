@@ -148,7 +148,13 @@ ul { margin: 0; padding: 0; list-style: none; }
 .pillar { padding: 1.5rem; border-left: 3px solid var(--gold); background: rgba(255,255,255,.05); }
 .pillar p { margin: 0; opacity: .85; }
 .ceo { display: grid; gap: 1.5rem; align-items: center; padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,.15); }
-.ceo__photo { max-width: 200px; border-radius: 50%; }
+.ceo__photo { 
+  max-width: 200px; 
+  width: 100%; /* Ensures it respects max-width */
+  aspect-ratio: 1 / 1; /* Forces a square box */
+  object-fit: cover; /* Crops the image nicely if it isn't originally square */
+  border-radius: 50%; 
+}
 .ceo h3 { margin-bottom: .1em; font-size: 1.6rem; }
 .ceo__role { color: var(--gold); font-family: var(--font-ui); font-weight: 700; }
 
@@ -241,16 +247,26 @@ address a { margin-top: .75rem; font-weight: 600; }
 .standards--dark dd { color: rgba(255,255,255,.85); }
 .chips--lg li { font-size: 1rem; padding: .6rem 1.2rem; }
 
+
+.service-image {
+  border-radius: 12px; /* Change to 8px, 16px, etc., depending on how round you want it */
+  object-fit: cover; /* Optional: keeps the image from stretching */
+}
 .projects { display: grid; gap: clamp(2.5rem, 6vw, 4.5rem); }
 .project { display: grid; gap: 1.5rem; align-items: center; }
 .project h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
-
+.project-image {
+  width: 100%;
+  aspect-ratio: 3 / 2; /* Matches your 900x600 (3:2) ratio */
+  object-fit: cover;   /* Ensures the image fills the area nicely without stretching/distortion */
+  border-radius: 12px; /* Adjust this value for how rounded you want the corners */
+}
 .article { margin-top: 2rem; }
 .article h2 { font-size: 1.5rem; margin-top: 2rem; }
 .article p { font-size: 1.05rem; color: #3b3835; }
 .article .ticks { margin-bottom: 1.25rem; }
 
-.cta { background: var(--brown); color: var(--white); padding: 3rem 0; }
+.cta { background: var(--coral-dark); color: var(--white); padding: 3rem 0; }
 .cta__inner { display: flex; flex-direction: column; gap: 1.5rem; align-items: flex-start; }
 .cta h2 { font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: .2em; }
 .cta p { margin: 0; opacity: .85; }

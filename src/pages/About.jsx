@@ -31,9 +31,10 @@ export default function About() {
 
       <section className="section section--tint">
         <div className="container split split--center">
-          <Placeholder label="Honeybee brand graphic (700×700)" ratio="1 / 1" />
+          {/* <Placeholder label="Honeybee brand graphic (700×700)" ratio="1 / 1" /> */}
+          <img src="images/maksika.png" alt="Honeybee brand graphic" ratio="1" />
           <div>
-            <SectionHead eyebrow="The branding story" title={p.brand.heading} />
+            <SectionHead eyebrow="Our Mission" title={p.brand.heading} />
             {p.brand.paras.map((t) => (
               <p key={t}>{t}</p>
             ))}
@@ -60,7 +61,8 @@ export default function About() {
         <div className="container">
           <SectionHead eyebrow="Our leadership" title={about.ceo.name} intro={p.leadershipIntro} />
           <div className="ceo ceo--top">
-            <Placeholder label="CEO portrait (400×400)" ratio="1 / 1" className="ceo__photo" />
+            {/* <Placeholder label="CEO portrait (400×400)" ratio="1 / 1" className="ceo__photo" /> */}
+            <img src="images/ceo.jpeg" alt="CEO portrait" ratio="1" className="ceo__photo" />
             <div>
               <p className="ceo__role">{about.ceo.role}</p>
               <p>37 years of dedicated experience in R&amp;D, precision mapping and mineral exploration drive the vision that defines Maksika.</p>

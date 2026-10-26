@@ -12,7 +12,8 @@ export default function Blog() {
         <div className="container grid grid--3">
           {posts.map((p) => (
             <Link key={p.slug} to={`/blog/${p.slug}`} className="card card--link">
-              <Placeholder label="Blog image (800×500)" ratio="8 / 5" />
+              {/* <Placeholder label="Blog image (800×500)" ratio="8 / 5" /> */}
+              <img src={blogPosts[p.slug].image} alt={p.title} className="card__image" />
               <div className="card__body">
                 <p className="meta">{blogPosts[p.slug].date} · {blogPosts[p.slug].read}</p>
                 <h3>{p.title}</h3>
